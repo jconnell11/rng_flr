@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a8474c01-9f05-4e2b-afb8-b652dd7d4c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4041e86b-6c9c-403d-964c-beb209bd4ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common video">
+      <UniqueIdentifier>{c21cd398-2048-42c9-9844-d082c1a348bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common video">
+      <UniqueIdentifier>{8cad01aa-de1b-44cb-86c5-d6079fa7d124}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rng_flr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_ocv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\jhc_conio.h">
+      <Filter>Header Files\common video</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="flr_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\jhc_conio.cpp">
+      <Filter>Source Files\common video</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9499c131-f3a1-46bf-b951-1e4c123e5a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4c65e498-61b9-4352-88e0-913bf58b6fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common robot">
+      <UniqueIdentifier>{d6b2a5d7-f6a0-472c-9e6b-aa9f4549ad38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common video">
+      <UniqueIdentifier>{06049ca8-b2a1-4a36-be7e-67be62e8f00f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common robot">
+      <UniqueIdentifier>{663cd304-43a1-4de1-a5ed-8625c2de1c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common video">
+      <UniqueIdentifier>{78fcd705-0ed8-4007-9012-ff1b2f22fa7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common robot\Environ">
+      <UniqueIdentifier>{a2258f3a-d9a3-447f-b4d3-b962f696eef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common robot\Environ">
+      <UniqueIdentifier>{8c224f2a-a512-4034-ae09-b2f3c2775bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common video\Data">
+      <UniqueIdentifier>{9129a34e-f4bc-45e3-aceb-34ee46e19259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common video\Interface">
+      <UniqueIdentifier>{fe583625-a9eb-44e3-b506-ea7f70e33e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common video\Processing">
+      <UniqueIdentifier>{8ec9fa90-f877-42d5-a351-28b4ee6473e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common video\Data">
+      <UniqueIdentifier>{f24b35fc-e239-46d6-ab3a-ebdf9292d45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common video\Interface">
+      <UniqueIdentifier>{d04af552-855a-40f6-9de5-7666f5fe1a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common video\Processing">
+      <UniqueIdentifier>{e073367f-c22f-4c34-aca4-4f52a01c9d77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jhcDepthTex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rng_flr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="robot\common\Environ\jhcPlainFloor.h">
+      <Filter>Header Files\common robot\Environ</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\jhc_conio.h">
+      <Filter>Header Files\common video</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\jhc_pthread.h">
+      <Filter>Header Files\common video</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\jhcGlobal.h">
+      <Filter>Header Files\common video</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Data\jhcArr.h">
+      <Filter>Header Files\common video\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Data\jhcBBox.h">
+      <Filter>Header Files\common video\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Data\jhcBitMacros.h">
+      <Filter>Header Files\common video\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Data\jhcImg.h">
+      <Filter>Header Files\common video\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Data\jhcRoi.h">
+      <Filter>Header Files\common video\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Interface\jhcMessage.h">
+      <Filter>Header Files\common video\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Interface\jprintf.h">
+      <Filter>Header Files\common video\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcALU.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcArea.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcColor.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcDist.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcDraw.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcEdge.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcGray.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcGroup.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcLUT.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\Processing\jhcThresh.h">
+      <Filter>Header Files\common video\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="video\common\jhc_str_s.h">
+      <Filter>Header Files\common video</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rng_flr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jhcDepthTex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="robot\common\Environ\jhcPlainFloor.cpp">
+      <Filter>Source Files\common robot\Environ</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\jhc_conio.cpp">
+      <Filter>Source Files\common video</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Data\jhcArr.cpp">
+      <Filter>Source Files\common video\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Data\jhcBBox.cpp">
+      <Filter>Source Files\common video\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Data\jhcImg.cpp">
+      <Filter>Source Files\common video\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Data\jhcRoi.cpp">
+      <Filter>Source Files\common video\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Interface\jhcMessage.cpp">
+      <Filter>Source Files\common video\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Interface\jprintf.cpp">
+      <Filter>Source Files\common video\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcALU.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcArea.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcColor.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcDist.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcDraw.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcEdge.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcGray.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcGroup.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcLUT.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="video\common\Processing\jhcThresh.cpp">
+      <Filter>Source Files\common video\Processing</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
