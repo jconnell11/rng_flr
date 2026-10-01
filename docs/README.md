@@ -46,7 +46,7 @@ This program leverages the assumption that the floor is _flat_ and of a _uniform
 | floor | depth |
 | ![Floor](rng_gnd.jpg)      | ![Depth](rng_map.jpg)        |
 
-It then exploits a second assumption: the floor generally _ends_ at obstacles which themselves have _vertical_ faces. So it scans up from the bottom of the image until the floor region stops, then progresses at an angle corresponding to true vertical at the ending floor pixel. As long as it remains within the first homegenous region encountered, it records a depth based on a sharp vertical rise from the floor. Notice that the system will not generate depth for the top of a block, nor will it find one object stacked on another.
+It then exploits a second assumption: the floor generally _ends_ at obstacles which themselves have _vertical_ faces. So it scans up from the bottom of the image until the floor region stops, then progresses at an angle corresponding to true vertical at the ending floor pixel. As long as it remains within the first homogenous region encountered, it records a depth based on a sharp vertical rise from the floor. Notice that the system will not generate depth for the top of a block, nor will it find one object stacked on another.
 
 ### Compiling
 
