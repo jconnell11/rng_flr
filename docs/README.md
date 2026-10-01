@@ -17,7 +17,7 @@ For Windows, start by copying [flr_test.exe](../project/flr_test.exe) executable
 
     flr_test 0
 
-For Linux, copy the naked [flr_test](../project/flr_test) to some location along with both shared libraries (.so files). As above, add [opencv_world4100.so](https://github.com/jconnell11/vid_ocv/blob/main/project/opencv_world4100.so) if needed. Finally "cd" to the new directory and enter the command:
+For Linux, copy the naked [flr_test](../project/flr_test) to some location along with the [libvid_ocv.so](../project/libvid_ocv.so) shared library. This requires OpenCV 4.10 so make sure that is installed, too. Finally "cd" to the new directory and enter the command:
 
     ./flr_test 0
 
