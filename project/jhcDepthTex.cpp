@@ -62,8 +62,9 @@ jhcDepthTex::jhcDepthTex ()
 ///////////////////////////////////////////////////////////////////////////
 
 //= Configure system for given focal length and a certain input image size.
+// can optionally add in a wall with hieght up (inches) at boundaries of floor
 
-void jhcDepthTex::Init (double flen, int iw, int ih)
+void jhcDepthTex::Init (double flen, int iw, int ih, double up)
 {
   // wait for background thread (if needed)
   if (done == 0)
@@ -71,7 +72,7 @@ void jhcDepthTex::Init (double flen, int iw, int ih)
   done = -1;
 
   // set size all intermediate images, input, and output
-  jhcPlainFloor::Init(flen, iw, ih);
+  jhcPlainFloor::Init(flen, iw, ih, up);
   col.SetSize(iw, ih, 3);
   rng.SetSize(iw, ih, 2);
 }

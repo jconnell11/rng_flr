@@ -57,7 +57,7 @@ public:
   jhcDepthTex ();
  
   // main functions
-  void Init (double flen, int iw =640, int ih =480);
+  void Init (double flen, int iw =640, int ih =480, double up =0.0);
   int Estimate (const unsigned char *rgb, double ht, double tilt);
   int Ready (int ms =0) const;
   int Depth (const unsigned char **d16, const unsigned char **rgb =NULL);

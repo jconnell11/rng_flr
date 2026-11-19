@@ -25,7 +25,7 @@ In either case you should see two live windows (as above): one showing the groun
 
 ### Code Interface
 
-There are a small number of [functions](../project/rng_flr.h) supported by the library. Examining the [source](../project/flr_test.cpp) code for the test program illustrates how to string them together. At the beginning call __rng_init__ and give it the dimensions of the (color) input images and the focal length of the camera (in pixels).
+There are a small number of [functions](../project/rng_flr.h) supported by the library. Examining the [source](../project/flr_test.cpp) code for the test program illustrates how to string them together. At the beginning call __rng_init__ and give it the dimensions of the (color) input images and the focal length of the camera (in pixels). The final argument allows you to add an artificial rim of some height (inches) to the edges of the floor area. This can help distinguish true boundaries from object shadows in reprojected overhead maps.
 
 Next, start processing an input image (in a background thread) by calling __rng_est__. This takes a buffer of unsigned integer pixels in BGR color order scanned from left-to-right in a _bottom-up_ direction (the standard for Windows, where this library is mostly used). It is important that the input image is rectified (flattened) and rotated so "up" is directly vertical in the image. The [vid_ocv](../project/vid_ocv.h) library conveniently provides this functionality. 
 

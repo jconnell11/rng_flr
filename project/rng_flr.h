@@ -22,12 +22,10 @@
 
 #pragma once
 
-#include <stddef.h>           // for NULL
-
-
 #ifdef __linux__
-  #define DEXP                // nothing special needed for Linux shared lib
-#else
+  #define DEXP               // nothing special needed for Linux shared lib
+#else 
+  #include <stddef.h>        // for NULL
 
   // function declarations 
   #ifdef RNGFLR_EXPORTS
@@ -40,16 +38,17 @@
   #ifndef RNGFLR_EXPORTS
     #pragma comment(lib, "rng_flr.lib")
   #endif
-
 #endif
+
 
 ///////////////////////////////////////////////////////////////////////////
 //                            Main Functions                             //
 ///////////////////////////////////////////////////////////////////////////
 
 //= Configure system for a certain input image size and clear all point data.
+// flen is camera focal length in pixels, up is edge wall height in inches
 
-extern "C" DEXP void rng_init (double flen, int w =640, int h =480);
+extern "C" DEXP void rng_init (double flen, int w =640, int h =480, double up =0.0);
 
 
 //= Start building depth map from color image and best-guess odometry.
@@ -69,7 +68,7 @@ extern "C" DEXP int rng_rdy (int ms =0);
 //= Binds aligned depth map and cached input image to supplied pointers.
 // rng is 16 bit depth values from camera in 0.25mm steps orthogonal to image plane
 // resets state to -1, output image remains valid until next rng_est() call
-// returns 1 if images are bound, 0 if not ready yet (busy)
+// returns 1 if images and odometry bound, 0 if not ready yet (busy)
 
 extern "C" DEXP int rng_d16 (const unsigned char **rng, const unsigned char **col =NULL);
 

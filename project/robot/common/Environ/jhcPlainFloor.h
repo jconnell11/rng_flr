@@ -49,7 +49,7 @@ friend class CFocusDoc;                // for debugging
 private:
   jhcImg boost, comps, seeds, mono, tmp2, edge, sep, reg, floor;
   jhcBBox boxes;
-  double flen, ht, tilt;
+  double flen, ht, trads, rim;
 
 
 // PROTECTED MEMBER VARIABLES
@@ -76,17 +76,19 @@ public:
   jhcPlainFloor ();
 
   // main functions
-  void Init (double f, int w =640, int h =480);
+  void Init (double f, int w =640, int h =480, double up =0.0);
   int Range (jhcImg& d16, const jhcImg& rgb, double h, double t);
   int Grass (jhcImg& dest);
 
 
 // PRIVATE MEMBER FUNCTIONS
 private:
-  // segmentation and estimation
+  // scene segmentation 
   void combo_edges (jhcImg& sob, jhcImg& bw, const jhcImg& rgb);
   void bland_areas (jhcImg& proto, const jhcImg& sob, const jhcImg& bw);
   void pick_floor (jhcImg& gnd, jhcImg& cc, const jhcImg& proto);
+
+  // depth estimation
   void ground_d16 (jhcImg& d16, const jhcImg& gnd) const;
   void obst_scan (jhcImg& d16, const jhcImg& cc, const jhcImg& gnd) const;
 

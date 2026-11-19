@@ -15,15 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="rng_flr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="vid_ocv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="video\common\jhc_conio.h">
       <Filter>Header Files\common video</Filter>
     </ClInclude>
+    <ClInclude Include="rng_flr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="flr_test.cpp">

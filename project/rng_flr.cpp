@@ -61,10 +61,11 @@ static jhcDepthTex flr;
 ///////////////////////////////////////////////////////////////////////////
 
 //= Configure system for a certain input image size and clear all point data.
+// flen is camera focal length in pixels, up is edge wall height in inches
 
-extern "C" DEXP void rng_init (double flen, int w, int h)
+extern "C" DEXP void rng_init (double flen, int w, int h, double up)
 {
-  flr.Init(flen, w, h);
+  flr.Init(flen, w, h, up);
 }
 
 

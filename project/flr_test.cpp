@@ -42,10 +42,10 @@
 
 int main (int argc, char *argv[])
 {
-  char ipname[40] = "http://192.168.0.200:81/stream";
+  char ipname[40] = "http://192.168.0.50:81/stream";
   const unsigned char *vbuf;
   unsigned char *gbuf = NULL, *nbuf = NULL;
-  double fps, flen = 219.0, ht = 5.5, tilt = 4.2;
+  double fps, flen = 219.0, ht = 5.5, tilt = 4.2, rim = 0.0;
   int rc, unit, drop, cnt = 0;
 
   // announce default camera pose
@@ -75,7 +75,7 @@ int main (int argc, char *argv[])
   // set standard geometric correction and create two display windows
   if (argc < 2)
     ocv_warp(0.14, -0.13, 0.024, flen, 1, 0, 313, 242);   
-  rng_init(flen, 640, 480);          
+  rng_init(flen, 640, 480, rim);          
   ocv_win(0, "Floor", 0, 0);     
   ocv_win(1, "Depth", 650, 0);     
 

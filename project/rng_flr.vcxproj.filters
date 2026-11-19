@@ -116,9 +116,6 @@
     <ClInclude Include="jhcDepthTex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rng_flr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="robot\common\Environ\jhcPlainFloor.h">
       <Filter>Header Files\common robot\Environ</Filter>
     </ClInclude>
@@ -181,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="video\common\jhc_conio.h">
       <Filter>Header Files\common video</Filter>
+    </ClInclude>
+    <ClInclude Include="rng_flr.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
